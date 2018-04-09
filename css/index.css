@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Tenor+Sans');
+
+/*-------------header----------------*/
+
+header nav {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+	border-bottom: 8px solid #b357b0;
+}
+
+header nav ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	width: 100%;
+}
+
+header nav ul li {
+	font-size: 20px;
+	display: inline-block;
+	margin-left: 4%;
+	margin-right: 4%;
+	padding-bottom: 4px;
+}
+
+header nav ul li a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	color: #b357b0;
+	text-decoration: none;
+}
+
+header nav ul li a:active {
+	color: #b357b0;
+}
+
+header #restoran_name {
+	position: relative;
+	float: left;
+	width: 100%;
+	background-color: black;
+	border-bottom: 8px solid #b357b0;
+}
+
+header #restoran_name h1 {
+    font-family: Tenor+Sans;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+}
+
+header #restoran_name h1 big {
+	font-size: 100px;
+	color: #74bd48;
+}
+
+header #restoran_name p {
+	text-align: center;
+	color: white;
+}
+
+@media (max-width: 670px) {
+    header nav ul li {display: block;}
+}
+
+@media (max-width: 565px) {
+    header #restoran_name h1 {font-size: 30px;}
+	header #restoran_name h1 big {font-size: 60px;}
+}
+
+@media (max-width: 340px) {
+    header #restoran_name h1 {font-size: 25px;}
+	header #restoran_name h1 big {font-size: 50px;}
+}
+
+/*-------------section aboutUs----------------*/
+/*-------------section menu----------------*/
+
+#aboutUs, #menu {
+	width: 70%;
+	margin: 0 auto;
+	padding: 1%;
+}
+
+#aboutUs {
+	clear: left;
+}
+
+h2 {
+	font-family: Montserrat;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	color: #b357b0;
+}
+
+#aboutUs, #menu p {
+	font-size: 20px;
+	text-align: justify;
+}
+
+@media (max-width: 425px) {
+    #aboutUs, #menu {width: 85%;}
+    #aboutUs, #menu p {font-size: 16px;}
+}
+
+/*-------------parallex----------------*/
+
+.parallex {
+  background-attachment: fixed !important;
+  background-position: center center;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  width: 100%;
+  min-height: 500px;
+}
+
+.first-parallex {
+	background-image: url(/img/first_parallex.jpg);
+}
+
+.second-parallex { 
+	background-image: url(/img/second_parallex.jpg);
+}
+
+/*-------------section service----------------*/
+
+#service {
+	width: 100%;
+	margin: 2% auto;
+	padding: 1%;
+}
+
+#service h2 {
+	color:#74bd48;
+	margin-bottom: 2%;
+}
+
+#service article {
+	text-align: center;
+}
+
+#service article img {
+	width: 200px;
+	height: 200px;
+	border: 8px solid #b357b0;
+	border-radius: 100px;
+}
+
+#service article p {
+	font-size: 20px;
+	text-align: center;
+}	
+
+@media (max-width: 425px) {
+	#service article p	{font-size: 16px;}
+}
+
+/*-------------footer----------------*/
+
+#contacts {
+	background-color: black;
+	border-top: 8px solid #b357b0;
+	border-bottom: 8px solid #b357b0;
+	
+}
+
+#contacts .address {
+	width: 70%;
+	margin: 0 auto;
+	padding: 4% 0;
+}
+
+#contacts .address p {
+	font-size: 20px;
+	color: white;
+}
+
+#contacts aside {
+	text-align: center;
+	display: inline-block;
+	width: 30%;
+	vertical-align: middle;
+}
+
+#contacts aside img {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	border: 3px solid #74bd48;
+	margin-top: 10px;
+}
+
+#contacts nav {
+	width: 100%;
+}
+
+#contacts nav ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	width: 100%;
+}
+
+#contacts nav ul li {
+	font-size: 20px;
+	margin-left: 4%;
+	margin-right: 4%;
+	padding-bottom: 4px;
+	display: block;
+}
+
+#contacts nav ul li a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#contacts nav ul li a:hover {
+	color: #b357b0;
+	text-decoration: none;
+}
+
+#contacts nav ul li a:active {
+	color: #b357b0;
+}
+
+@media (max-width: 768px) {
+    #contacts aside {
+    	display: block; 
+    	width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+	#contacts .address p {font-size: 16px;}
+	#contacts nav ul li {font-size: 16px;}
+}
+
+/*-------------scroll to top----------------*/
+
+#toTop {
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 64px;
+    height: 64px;
+    background-image: url(/img/up.png);
+    border-radius: 32px;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+
+#toTop:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
